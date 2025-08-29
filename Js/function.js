@@ -56,11 +56,14 @@ function User(){
 
         var user = sessionStorage.getItem('user');
         var login = sessionStorage.getItem('login');
-if(login){
-  window.location= "profile_"+user+".html";
+if(!login){
+  window.location= "profile_visitor"+".html";
 }
+//if(login){
+ // window.location= "profile_"+user+".html";
+//}
 else{
-        alert ("Login First");
+        alert ("Register First");
         window.location="../register.html";
 }
 };
@@ -72,10 +75,5 @@ function Logout(){
 }
 function Logon(){
         var login = sessionStorage.getItem('login');
-if(login){
-}
-else{
-        alert ("Login First");
-        window.location="../index.html";
-}      
+ 
 }
