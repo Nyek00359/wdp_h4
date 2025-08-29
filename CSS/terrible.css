@@ -1,0 +1,17 @@
+.bg-timeline-image {
+  background: url("../img/Terrible/timeline.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.logout{
+    position: fixed;
+    top: 8px;
+  right: 16px;
+  font-size: 18px;
+        }
+.home{
+    position: fixed;
+    top: 8px;
+  right: 105px;
+  font-size: 18px;
+        }
